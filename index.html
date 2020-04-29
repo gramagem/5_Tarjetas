@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjetas codeartist</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+        }
+        body{
+            background: linear-gradient(42deg, black, whitesmoke);
+        }
+        .contenedor{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 2em;
+            justify-content: center;
+           
+        }
+        .dissenyador{
+            width: 25em;
+            background: lightsalmon;
+            margin: 0.5em;            
+        }
+        .cont_img{
+            height: 300px;
+            background: yellow;
+        }
+        .cont_img img{
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;            
+        }
+        header{ 
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between; 
+            color: black;
+            margin: 0.5em 1em;
+            padding: 0 0 0.2em 0;
+            border-bottom: 1px solid orangered;
+        }
+        h3{
+            font-weight: 600;
+            font-style: normal;
+        }
+        h4{
+            font-weight: 500;
+            font-style: italic;
+        }
+        .cont_txt{
+            margin: 0.5em 1em;
+            color: black;
+            text-align: justify;
+            hyphens: auto;
+            font-size: 0.9;
+            line-height: 1.3em;
+            margin-bottom: 1.4em;
+        }
+        .peu_dissenyador{
+            background: orangered;
+            color: whitesmoke;
+            font-style: italic;
+            font-size: 0.9em;
+            padding: 1em 1em 0.5em 1em; 
+        }
+        @media (max-width:600px){
+            body{
+                font-size: 2px;
+            }
+            .contenedor{
+                flex-direction: column;
+            }
+            .dissenyador{
+                width: 30em;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="dissenyador">
+            <div class="cont_img">
+                <img src="img/iban.jpg" alt="Iban Ramon">
+                </div>
+            <header>
+                <h3>Iban Ramon</h3>
+                <h4>1901</h4>
+            </header>
+            <div class="cont_txt">
+                <p>Vive y trabaja en València. Es diseñador profesional desde 1994, después estuvo trabajando solo un par de años, él creó su propio estudio en 2001 especializado en diseño editorial, identidad corporativa y comunicación gráfica. Ibán Ramón combina su trabajo como diseñador con el desarrollo de sus proyectos personales.</p>
+                </div>
+            <div class="peu_dissenyador">
+                <p>Ibán Ramón combines his work as designer with the development of his personal projects, like his photographic series.</p>
+                </div>
+        </div>
+        <div class="dissenyador">
+            <div class="cont_img">
+                <img src="img/pintori.jpg" alt="Giovanni Pintori">
+                </div>
+            <header>
+                <h3>Giovanni Pintori</h3>
+                <h4>1912</h4>
+            </header>
+            <div class="cont_txt">
+                <p>Diseñador gráfico minimalista italiano, conocido sobre todo por su trabajo para Olivetti.
+                    Con su característico uso del color y las formas geométricas, Pintori empezó a trabajar en la empresa en 1936, en el departamento de publicidad, trás graduarse en el instituto Superior para las Industrias en Monza. Poco después de ser nombrado director artístico de Olivetti, en 1950, expuso en el MoMA, en 1952. Trás dejar la compañía en 1967, abrió su propio estudio de diseño en Milán, desde donde trabjó para numerosos clientes de la región, antes de dedicarse a pintar en sus últimos años.</p>
+                </div>
+            <div class="peu_dissenyador">
+                <p>Sus proyectos personales de diseño se basaban principalmente en interpretaciones visuales del funcionamiento de los diferentes productos a través de imágenes que también incluían números, letras y palabras.</p>
+                </div>
+        </div>
+     </div>
+</body>
+</html>
